@@ -1,0 +1,32 @@
+# Basic AI/ML packages
+torch>=2.0.0
+transformers
+datasets
+accelerate
+
+# Data processing
+numpy
+pandas
+scikit-learn
+
+# Visualization and notebooks
+jupyter
+matplotlib
+seaborn
+
+# Web frameworks
+streamlit
+fastapi
+uvicorn
+
+# Vector databases
+faiss-cpu
+qdrant-client
+
+# Other utilities
+requests
+beautifulsoup4
+tqdm
+
+# For diffusions (Phase 5)
+diffusers
