@@ -30,3 +30,5 @@ tqdm
 
 # For diffusions (Phase 5)
 diffusers
+ansible
+python-dotenv

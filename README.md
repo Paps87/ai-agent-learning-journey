@@ -64,7 +64,67 @@ Define and implement a custom AI project (e.g., DevOps architect AI, InfraGPT).
 2. Create a virtual environment: `python3 -m venv venv`
 3. Activate: `source venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
-5. For GPU: Use Novita AI or local/cloud setup
+5. GPU environment: Use Novita AI for computations during testing phases
+
+## Managing Secrets
+
+API keys and sensitive data are stored in an encrypted vault using Ansible Vault.
+
+1. Copy `secrets_template.yml` to `secrets.yml`
+2. Edit `secrets.yml` with your actual keys
+3. Encrypt it: `ansible-vault encrypt secrets.yml`
+4. To edit: `ansible-vault edit secrets.yml`
+5. To view: `ansible-vault view secrets.yml`
+
+In Python code, load secrets like:
+
+```python
+import subprocess
+import yaml
+
+# Decrypt and load
+result = subprocess.run(['ansible-vault', 'view', 'secrets.yml'], capture_output=True, text=True, input='your_vault_password\n')
+secrets = yaml.safe_load(result.stdout)
+
+API_KEY = secrets['novita_api_key']
+```
+
+Alternatively, use python-dotenv with a .env file (also gitignored).
+
+## Using Novita AI for GPU Computations
+
+Novita AI provides cloud GPU resources for running AI models. Sign up at [novita.ai](https://novita.ai), get your API key, and store it securely in the vault.
+
+Example usage in Python:
+
+```python
+import requests
+
+# Load API_KEY from secrets
+API_KEY = secrets['novita_api_key']  # Assuming secrets loaded as above
+
+url = "https://api.novita.ai/v1/text-to-image"  # Example endpoint for image generation
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "prompt": "A beautiful sunset over mountains",
+    "width": 512,
+    "height": 512
+}
+
+response = requests.post(url, headers=headers, json=data)
+if response.status_code == 200:
+    result = response.json()
+    print("Generated image URL:", result['image_url'])
+else:
+    print("Error:", response.text)
+```
+
+For LLM inference, check their documentation for text generation endpoints. Replace the endpoint and data accordingly.
 
 ## Requirements
 - Python 3.11+
