@@ -27,6 +27,8 @@ qdrant-client
 requests
 beautifulsoup4
 tqdm
+sentencepiece
+wikipedia
 
 # For diffusions (Phase 5)
 diffusers
