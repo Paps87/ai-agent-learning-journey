@@ -1,0 +1,53 @@
+# RAG Dependencies (Phase 2)
+qdrant-client
+sentence-transformers
+langchain
+langchain-community
+unstructured
+chromadb  # Alternative vector DB
+
+# Additional utilities for Phase 2
+faiss-cpu  # Facebook AI Similarity Search
+numpy
+pandas
+scikit-learn
+tiktoken  # For token counting
+# Basic AI/ML packages
+torch>=2.0.0
+transformers
+datasets
+accelerate
+
+# Data processing
+numpy
+pandas
+scikit-learn
+
+# Visualization and notebooks
+jupyter
+matplotlib
+seaborn
+
+# Web frameworks
+streamlit
+fastapi
+uvicorn
+
+# Vector databases
+faiss-cpu
+qdrant-client
+
+# Other utilities
+requests
+beautifulsoup4
+tqdm
+sentencepiece
+wikipedia
+
+# Phase 3 - Web Search Agent
+ddgs  # DuckDuckGo search API
+
+# For diffusions (Phase 5)
+diffusers
+ansible
+python-dotenv
