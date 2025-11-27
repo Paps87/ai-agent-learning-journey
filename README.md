@@ -49,6 +49,19 @@ This project implements a **4-phase learning path** to build production-ready AI
 - ✅ Response verification & self-correction
 - 📈 Benchmarking on GSM8K/MATH datasets
 
+### Phase 5: Multi-Agent Systems 🔮
+- 🤝 Multi-agent collaboration
+- 🔄 Agent communication protocols
+- 🎭 Role-based agent specialization
+- 🏗️ Distributed task execution
+
+### Phase 6: Production Deployment 🚀
+- 🐳 Docker containerization
+- ☸️ Kubernetes orchestration
+- 📊 Monitoring & logging
+- 🔒 Security hardening
+- ⚡ Performance optimization
+
 ---
 
 ## 🛠️ Tech Stack
@@ -236,6 +249,18 @@ ai-agent-journey/
 - 🚧 Self-consistency & verification
 - 🚧 Benchmark on GSM8K/MATH
 - 🚧 Optional: Fine-tuning with LoRA
+
+### Phase 5: Multi-Agent Systems (4-6 weeks)
+- 🔮 Multi-agent architecture design
+- 🔮 Agent communication & coordination
+- 🔮 Specialized agent roles
+- 🔮 Collaborative problem solving
+
+### Phase 6: Production Deployment (3-4 weeks)
+- 🚀 Containerization with Docker
+- 🚀 Kubernetes deployment
+- 🚀 CI/CD pipeline setup
+- 🚀 Monitoring & scaling
 
 ---
 
