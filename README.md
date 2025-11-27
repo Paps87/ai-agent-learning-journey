@@ -344,9 +344,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter)
+**Paps87** - [@Paps87](https://github.com/Paps87)
 
 Project Link: [https://github.com/Paps87/ai-agent-learning-journey](https://github.com/Paps87/ai-agent-learning-journey)
+
+Feel free to ⭐ star this repo if you find it helpful!
 
 ---
 
