@@ -79,19 +79,15 @@ if __name__ == "__main__":
     # Example usage
     tokenizer = Tokenizer()
 
-    # Train on sample data (you would use the collected corpus)
-    # For demo, create a small sample
-    sample_text = """Artificial intelligence is intelligence demonstrated by machines.
-    Machine learning is a subset of AI that enables systems to learn from data.
-    Natural language processing deals with the interaction between computers and human language."""
-
-    sample_file = "../data/raw/sample.txt"
-    Path(sample_file).parent.mkdir(parents=True, exist_ok=True)
-    with open(sample_file, 'w') as f:
-        f.write(sample_text)
-
-    # Train tokenizer
-    tokenizer.train(sample_file)
+    # Train on the actual Wikipedia corpus collected
+    corpus_file = "../data/raw/wikipedia_corpus.txt"
+    
+    if Path(corpus_file).exists():
+        print(f"Training tokenizer on {corpus_file}...")
+        tokenizer.train(corpus_file)
+    else:
+        print(f"Corpus file {corpus_file} not found. Please run data collection first.")
+        exit(1)
 
     # Load and test
     tokenizer.load()

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Labs Project
 
 This repository contains a series of AI projects following a structured learning path from basic LLM understanding to advanced multi-modal agents.
@@ -137,3 +138,7 @@ For LLM inference, check their documentation for text generation endpoints. Repl
 - Each project: 2-3 weeks
 - Method: Guided with ready-to-run code, iterate together on bugs/experiments/results
 - End of each project: Report and demo
+=======
+# projet_ai
+I plan to deep dive into AI, you will find all my prj here
+>>>>>>> 6797304b865902f833abafae34dee42d527bcab8

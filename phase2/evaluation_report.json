@@ -1,0 +1,252 @@
+{
+  "test_cases": [
+    {
+      "test_case": {
+        "question": "Comment configurer le VPN ?",
+        "expected_keywords": [
+          "vpn.entreprise.com",
+          "Active Directory",
+          "identifiants"
+        ],
+        "expected_role": "it_support",
+        "expected_style": "detailed",
+        "category": "IT Support"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nPour configurer le VPN, utilisez l'adresse vpn.entreprise.com avec vos identifiants Active Directory.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.674]\nSource: it_faq\nContenu: Pour configurer le VPN, allez sur vpn.entreprise.com et utilisez vos identifiants Active Directory\n\n[Document 2 - Score: 0.592]\nSource: it\nContenu: VPN configuration via vpn.entreprise.com\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un expert en support informatique chez TechCorp. Ton rôle est d'aider les employés avec:\n- Problèmes techniques et configurations\n- Accès aux systèmes et authentification\n- Matériel informatique et logiciels\n- Sécurité et bonnes pratiques\n\nTon expertise: réseaux, VPN, emails, imprimantes, mots de passe, Active Directory.\n\n\n# STYLE DE RÉPONSE\n\nFournis une réponse détaillée avec:\n- Explications étape par étape\n- Contextes et raisons\n- Exemples concrets si pertinent\n- Alternatives possibles\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.674]\nSource: it_faq\nContenu: Pour configurer le VPN, allez sur vpn.entreprise.com et utilisez vos identifiants Active Directory\n\n[Document 2 - Score: 0.592]\nSource: it\nContenu: VPN configuration via vpn.entreprise.com\n\n\n# QUESTION UTILISATEUR\nComment configurer le VPN ?\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Comment configurer le VPN ?",
+          "context_length": 33,
+          "has_context": true,
+          "response_length": 28
+        }
+      },
+      "evaluation": {
+        "question": "Comment configurer le VPN ?",
+        "answer_length": 28,
+        "context_length": 33,
+        "has_context": true,
+        "keyword_matches": 1,
+        "relevance_score": 0.2,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.520089",
+        "overall_score": 0.45999999999999996
+      },
+      "detected_role": "it_support",
+      "detected_style": "detailed",
+      "role_correct": true,
+      "style_correct": true,
+      "passed": false
+    },
+    {
+      "test_case": {
+        "question": "Où demander des congés ?",
+        "expected_keywords": [
+          "portail RH",
+          "rh.techcorp.com",
+          "congés"
+        ],
+        "expected_role": "hr_assistant",
+        "expected_style": "concise",
+        "category": "RH"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nLes demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.730]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.659]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n\n[Document 3 - Score: 0.424]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un assistant RH chez TechCorp. Ton rôle est d'aider avec:\n- Demandes de congés et absences\n- Processus d'évaluation et développement\n- Avantages sociaux et rémunération\n- Politiques d'entreprise et procédures\n\nTon expertise: portail RH, congés payés, évaluations, formations.\n\n\n# STYLE DE RÉPONSE\n\nAdopte un ton amical et accessible:\n- Langage simple et clair\n- Empathie et encouragement\n- Emojis occasionnels si approprié 😊\n- Phrases courtes et positives\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.730]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.659]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n\n[Document 3 - Score: 0.424]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n\n# QUESTION UTILISATEUR\nOù demander des congés ?\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Où demander des congés ?",
+          "context_length": 59,
+          "has_context": true,
+          "response_length": 29
+        }
+      },
+      "evaluation": {
+        "question": "Où demander des congés ?",
+        "answer_length": 29,
+        "context_length": 59,
+        "has_context": true,
+        "keyword_matches": 2,
+        "relevance_score": 0.4,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.539457",
+        "overall_score": 0.58
+      },
+      "detected_role": "hr_assistant",
+      "detected_style": "friendly",
+      "role_correct": true,
+      "style_correct": false,
+      "passed": true
+    },
+    {
+      "test_case": {
+        "question": "Quand a lieu l'évaluation annuelle ?",
+        "expected_keywords": [
+          "décembre",
+          "évaluation",
+          "annuelle"
+        ],
+        "expected_role": "hr_assistant",
+        "expected_style": "detailed",
+        "category": "RH"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nLes demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.720]\nSource: hr\nContenu: Evaluation annuelle en décembre\n\n[Document 2 - Score: 0.616]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.385]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un assistant RH chez TechCorp. Ton rôle est d'aider avec:\n- Demandes de congés et absences\n- Processus d'évaluation et développement\n- Avantages sociaux et rémunération\n- Politiques d'entreprise et procédures\n\nTon expertise: portail RH, congés payés, évaluations, formations.\n\n\n# STYLE DE RÉPONSE\n\nAdopte un ton amical et accessible:\n- Langage simple et clair\n- Empathie et encouragement\n- Emojis occasionnels si approprié 😊\n- Phrases courtes et positives\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.720]\nSource: hr\nContenu: Evaluation annuelle en décembre\n\n[Document 2 - Score: 0.616]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.385]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n\n# QUESTION UTILISATEUR\nQuand a lieu l'évaluation annuelle ?\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Quand a lieu l'évaluation annuelle ?",
+          "context_length": 50,
+          "has_context": true,
+          "response_length": 29
+        }
+      },
+      "evaluation": {
+        "question": "Quand a lieu l'évaluation annuelle ?",
+        "answer_length": 29,
+        "context_length": 50,
+        "has_context": true,
+        "keyword_matches": 2,
+        "relevance_score": 0.4,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.551980",
+        "overall_score": 0.58
+      },
+      "detected_role": "hr_assistant",
+      "detected_style": "friendly",
+      "role_correct": true,
+      "style_correct": false,
+      "passed": true
+    },
+    {
+      "test_case": {
+        "question": "Comment réinitialiser mon mot de passe ?",
+        "expected_keywords": [
+          "support",
+          "IT",
+          "mot de passe"
+        ],
+        "expected_role": "it_support",
+        "expected_style": "technical",
+        "category": "IT Support"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nPour configurer le VPN, utilisez l'adresse vpn.entreprise.com avec vos identifiants Active Directory.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.416]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.393]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.375]\nSource: hr\nContenu: Evaluation annuelle en décembre\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un expert en support informatique chez TechCorp. Ton rôle est d'aider les employés avec:\n- Problèmes techniques et configurations\n- Accès aux systèmes et authentification\n- Matériel informatique et logiciels\n- Sécurité et bonnes pratiques\n\nTon expertise: réseaux, VPN, emails, imprimantes, mots de passe, Active Directory.\n\n\n# STYLE DE RÉPONSE\n\nFournis une réponse détaillée avec:\n- Explications étape par étape\n- Contextes et raisons\n- Exemples concrets si pertinent\n- Alternatives possibles\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.416]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.393]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.375]\nSource: hr\nContenu: Evaluation annuelle en décembre\n\n\n# QUESTION UTILISATEUR\nComment réinitialiser mon mot de passe ?\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Comment réinitialiser mon mot de passe ?",
+          "context_length": 50,
+          "has_context": true,
+          "response_length": 28
+        }
+      },
+      "evaluation": {
+        "question": "Comment réinitialiser mon mot de passe ?",
+        "answer_length": 28,
+        "context_length": 50,
+        "has_context": true,
+        "keyword_matches": 1,
+        "relevance_score": 0.2,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.565647",
+        "overall_score": 0.45999999999999996
+      },
+      "detected_role": "it_support",
+      "detected_style": "detailed",
+      "role_correct": true,
+      "style_correct": false,
+      "passed": false
+    },
+    {
+      "test_case": {
+        "question": "Quels sont les avantages sociaux ?",
+        "expected_keywords": [
+          "avantages",
+          "sociaux",
+          "RH"
+        ],
+        "expected_role": "hr_assistant",
+        "expected_style": "friendly",
+        "category": "RH"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nLes demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.484]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.457]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.404]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un assistant RH chez TechCorp. Ton rôle est d'aider avec:\n- Demandes de congés et absences\n- Processus d'évaluation et développement\n- Avantages sociaux et rémunération\n- Politiques d'entreprise et procédures\n\nTon expertise: portail RH, congés payés, évaluations, formations.\n\n\n# STYLE DE RÉPONSE\n\nAdopte un ton amical et accessible:\n- Langage simple et clair\n- Empathie et encouragement\n- Emojis occasionnels si approprié 😊\n- Phrases courtes et positives\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.484]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n[Document 2 - Score: 0.457]\nSource: hr_policies\nContenu: L'évaluation annuelle des employés a lieu chaque année en décembre avec un entretien individuel\n\n[Document 3 - Score: 0.404]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n\n\n# QUESTION UTILISATEUR\nQuels sont les avantages sociaux ?\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Quels sont les avantages sociaux ?",
+          "context_length": 59,
+          "has_context": true,
+          "response_length": 29
+        }
+      },
+      "evaluation": {
+        "question": "Quels sont les avantages sociaux ?",
+        "answer_length": 29,
+        "context_length": 59,
+        "has_context": true,
+        "keyword_matches": 2,
+        "relevance_score": 0.4,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.579813",
+        "overall_score": 0.58
+      },
+      "detected_role": "hr_assistant",
+      "detected_style": "friendly",
+      "role_correct": true,
+      "style_correct": true,
+      "passed": true
+    },
+    {
+      "test_case": {
+        "question": "Problème avec mon email",
+        "expected_keywords": [
+          "email",
+          "support",
+          "technique"
+        ],
+        "expected_role": "it_support",
+        "expected_style": "technical",
+        "category": "IT Support"
+      },
+      "result": {
+        "answer": "Basé sur la documentation, voici la réponse :\n\nPour configurer le VPN, utilisez l'adresse vpn.entreprise.com avec vos identifiants Active Directory.\n\nPour plus de détails, consultez la documentation complète.",
+        "context": "[Document 1 - Score: 0.332]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n\n[Document 2 - Score: 0.308]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n",
+        "prompt": "# RÔLE ET CONTEXTE\n\nTu es un expert en support informatique chez TechCorp. Ton rôle est d'aider les employés avec:\n- Problèmes techniques et configurations\n- Accès aux systèmes et authentification\n- Matériel informatique et logiciels\n- Sécurité et bonnes pratiques\n\nTon expertise: réseaux, VPN, emails, imprimantes, mots de passe, Active Directory.\n\n\n# STYLE DE RÉPONSE\n\nAdopte un ton amical et accessible:\n- Langage simple et clair\n- Empathie et encouragement\n- Emojis occasionnels si approprié 😊\n- Phrases courtes et positives\n\n\n# CONTRAINTES IMPORTANTES\n- Utilise EXCLUSIVEMENT le contexte fourni pour répondre\n- Si l'information n'est pas dans le contexte, dis clairement que tu ne sais pas\n- Ne invente jamais d'information\n- Cite tes sources quand c'est pertinent\n- Sois précis et factuel\n\n# CONTEXTE DOCUMENTAIRE\n[Document 1 - Score: 0.332]\nSource: hr_policies\nContenu: Les demandes de congés se font via le portail RH à l'adresse rh.techcorp.com/conges\n\n[Document 2 - Score: 0.308]\nSource: hr\nContenu: Les congés se demandent via le portail RH\n\n\n# QUESTION UTILISATEUR\nProblème avec mon email\n\n# RÉPONSE (en français):",
+        "metrics": {
+          "question": "Problème avec mon email",
+          "context_length": 37,
+          "has_context": true,
+          "response_length": 28
+        }
+      },
+      "evaluation": {
+        "question": "Problème avec mon email",
+        "answer_length": 28,
+        "context_length": 37,
+        "has_context": true,
+        "keyword_matches": 1,
+        "relevance_score": 0.2,
+        "completeness_score": 0.8,
+        "timestamp": "2025-10-13T00:58:31.602448",
+        "overall_score": 0.45999999999999996
+      },
+      "detected_role": "it_support",
+      "detected_style": "friendly",
+      "role_correct": true,
+      "style_correct": false,
+      "passed": false
+    }
+  ],
+  "summary": {
+    "total_tests": 6,
+    "passed_tests": 3,
+    "average_score": 0.52,
+    "start_time": "2025-10-13T00:58:31.503111",
+    "end_time": "2025-10-13T00:58:31.602514",
+    "success_rate": 0.5
+  }
+}

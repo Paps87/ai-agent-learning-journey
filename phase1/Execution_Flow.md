@@ -37,7 +37,6 @@ wikipedia_corpus.txt     tokenized_corpus.txt      gpt_model.pth
 ```
 
 ## Pipeline Étape par Étape
-
 ### 1. **PHASE DE DONNÉES** 📊
 ```
 Internet → Wikipedia API → DataCollector → Nettoyage → Fichiers texte

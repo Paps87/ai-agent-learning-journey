@@ -24,7 +24,14 @@ def load_model_and_tokenizer():
 
         # Load model
         vocab_size = tokenizer.get_vocab_size()
-        model = GPTModel(vocab_size=vocab_size)
+        # Use same parameters as the saved test model
+        model = GPTModel(
+            vocab_size=vocab_size,
+            d_model=128,      # Match saved model
+            n_heads=4,
+            n_layers=2,       # Match saved model
+            max_seq_len=256   # Match saved model
+        )
 
         model_path = "../models/gpt_model.pth"
         if os.path.exists(model_path):
