@@ -77,7 +77,7 @@ This project implements a **4-phase learning path** to build production-ready AI
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/ai-agent-journey.git
+git clone https://github.com/Paps87/projet_ai.git
 cd ai-agent-journey
 
 # Create virtual environment
@@ -321,7 +321,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name** - [@yourtwitter](https://twitter.com/yourtwitter)
 
-Project Link: [https://github.com/yourusername/ai-agent-journey](https://github.com/yourusername/ai-agent-journey)
+Project Link: [https://github.com/Paps87/projet_ai](https://github.com/Paps87/projet_ai)
 
 ---
 
