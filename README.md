@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AI Labs Project
 
 This repository contains a series of AI projects following a structured learning path from basic LLM understanding to advanced multi-modal agents.
